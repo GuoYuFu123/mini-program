@@ -1,0 +1,208 @@
+const tags =  ["热门", "最新", "经典", "可播放", "豆瓣高分", "冷门佳片", "华语", "欧美", "韩国", "日本", "动作", "喜剧", "爱情", "科幻", "悬疑", "恐怖"]
+
+const subjects = [{
+    "rate": "4.2",
+    "cover_x": 770,
+    "title": "法医秦明之致命小说",
+    "url": "https:\/\/movie.douban.com\/subject\/30359005\/",
+    "playable": true,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2574802390.jpg",
+    "id": "30359005",
+    "cover_y": 1080,
+    "is_new": true
+}, {
+    "rate": "5.4",
+    "cover_x": 1500,
+    "title": "穿越时空的骑士",
+    "url": "https:\/\/movie.douban.com\/subject\/33159421\/",
+    "playable": false,
+    "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2573684978.jpg",
+    "id": "33159421",
+    "cover_y": 2222,
+    "is_new": true
+}, {
+    "rate": "6.8",
+    "cover_x": 4518,
+    "title": "小姐与流浪汉",
+    "url": "https:\/\/movie.douban.com\/subject\/30175647\/",
+    "playable": false,
+    "cover": "https://img9.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2567078174.jpg",
+    "id": "30175647",
+    "cover_y": 6693,
+    "is_new": false
+}, {
+    "rate": "8.6",
+    "cover_x": 1500,
+    "title": "克劳斯：圣诞节的秘密",
+    "url": "https:\/\/movie.douban.com\/subject\/26858510\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2570825762.jpg",
+    "id": "26858510",
+    "cover_y": 2222,
+    "is_new": false
+}, {
+    "rate": "5.7",
+    "cover_x": 675,
+    "title": "冬季浪漫故事",
+    "url": "https:\/\/movie.douban.com\/subject\/6538867\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2571802102.jpg",
+    "id": "6538867",
+    "cover_y": 1000,
+    "is_new": false
+}, {
+    "rate": "4.9",
+    "cover_x": 1080,
+    "title": "我的拳王男友",
+    "url": "https:\/\/movie.douban.com\/subject\/27132180\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2573582590.jpg",
+    "id": "27132180",
+    "cover_y": 1511,
+    "is_new": false
+}, {
+    "rate": "5.4",
+    "cover_x": 675,
+    "title": "原始恐惧",
+    "url": "https:\/\/movie.douban.com\/subject\/27139736\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2573039511.jpg",
+    "id": "27139736",
+    "cover_y": 1000,
+    "is_new": false
+}, {
+    "rate": "4.5",
+    "cover_x": 3000,
+    "title": "陈情令之生魂",
+    "url": "https:\/\/movie.douban.com\/subject\/34786971\/",
+    "playable": true,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2572652962.jpg",
+    "id": "34786971",
+    "cover_y": 4280,
+    "is_new": false
+}, {
+    "rate": "6.2",
+    "cover_x": 1200,
+    "title": "禁闭男童",
+    "url": "https:\/\/movie.douban.com\/subject\/27005769\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2568659361.jpg",
+    "id": "27005769",
+    "cover_y": 1778,
+    "is_new": false
+}, {
+    "rate": "6.4",
+    "cover_x": 3000,
+    "title": "犯罪现场",
+    "url": "https:\/\/movie.douban.com\/subject\/26235346\/",
+    "playable": true,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2570879785.jpg",
+    "id": "26235346",
+    "cover_y": 4200,
+    "is_new": false
+}, {
+    "rate": "8.1",
+    "cover_x": 1500,
+    "title": "续命之徒：绝命毒师电影",
+    "url": "https:\/\/movie.douban.com\/subject\/30372377\/",
+    "playable": false,
+    "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2569548689.jpg",
+    "id": "30372377",
+    "cover_y": 2222,
+    "is_new": false
+}, {
+    "rate": "6.7",
+    "cover_x": 1500,
+    "title": "断裂",
+    "url": "https:\/\/movie.douban.com\/subject\/30366084\/",
+    "playable": false,
+    "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2568649517.jpg",
+    "id": "30366084",
+    "cover_y": 2222,
+    "is_new": false
+}, {
+    "rate": "6.7",
+    "cover_x": 1382,
+    "title": "在无爱之森呐喊",
+    "url": "https:\/\/movie.douban.com\/subject\/30337760\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2571542101.jpg",
+    "id": "30337760",
+    "cover_y": 2048,
+    "is_new": false
+}, {
+    "rate": "5.7",
+    "cover_x": 1800,
+    "title": "惊弓之鸟",
+    "url": "https:\/\/movie.douban.com\/subject\/30177221\/",
+    "playable": false,
+    "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2571026118.jpg",
+    "id": "30177221",
+    "cover_y": 2666,
+    "is_new": false
+}, {
+    "rate": "5.9",
+    "cover_x": 600,
+    "title": "神奇女侠：血脉",
+    "url": "https:\/\/movie.douban.com\/subject\/30286098\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2563845553.jpg",
+    "id": "30286098",
+    "cover_y": 900,
+    "is_new": false
+}, {
+    "rate": "7.1",
+    "cover_x": 1500,
+    "title": "最普通的恋爱",
+    "url": "https:\/\/movie.douban.com\/subject\/30331424\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2570803082.jpg",
+    "id": "30331424",
+    "cover_y": 2145,
+    "is_new": false
+}, {
+    "rate": "6.5",
+    "cover_x": 2000,
+    "title": "完美男人",
+    "url": "https:\/\/movie.douban.com\/subject\/30320204\/",
+    "playable": false,
+    "cover": "https://img1.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2568619799.jpg",
+    "id": "30320204",
+    "cover_y": 2850,
+    "is_new": false
+}, {
+    "rate": "5.4",
+    "cover_x": 695,
+    "title": "锅盖头4：回归法制",
+    "url": "https:\/\/movie.douban.com\/subject\/34785746\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2568651843.jpg",
+    "id": "34785746",
+    "cover_y": 754,
+    "is_new": false
+}, {
+    "rate": "6.2",
+    "cover_x": 3000,
+    "title": "攀登者",
+    "url": "https:\/\/movie.douban.com\/subject\/30413052\/",
+    "playable": true,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2568577681.jpg",
+    "id": "30413052",
+    "cover_y": 4200,
+    "is_new": false
+}, {
+    "rate": "9.1",
+    "cover_x": 2000,
+    "title": "爱尔兰人",
+    "url": "https:\/\/movie.douban.com\/subject\/6981153\/",
+    "playable": false,
+    "cover": "https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2568902055.jpg",
+    "id": "6981153",
+    "cover_y": 2929,
+    "is_new": false
+}]
+
+export {
+    tags,
+    subjects
+}

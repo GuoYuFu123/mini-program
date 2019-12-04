@@ -1,0 +1,28 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+
+<view class='detail-box'>
+  <view class="detail-item">
+    <text class="label">ID:</text>
+    <text class="value">{{id || ""}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">title:</text>
+    <text class="value">{{title || ""}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">url:</text>
+    <text class="value">{{url || ""}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">cover:</text>
+    <text class="value">{{cover || ""}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">is_new:</text>
+    <text class="value">{{ is_new || ""}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">rate:</text>
+    <text class="value">{{ rate || ""}}</text>
+  </view>
+</view>

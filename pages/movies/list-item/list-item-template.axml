@@ -1,0 +1,12 @@
+<template name="listItemTemplate">
+    <view class="list-item-box" onTap="enterDetail" data-item="{{item}}">
+        <image src="/images/movies/movie.jpg" ></image>
+        <view class="instrc">
+            <text class="name">{{item.title}}</text>
+            <view class="feature">
+                <text a:if="{{item.is_new}}" class="new">新</text>
+                <text class="score">{{item.rate}}</text>
+            </view>
+        </view>
+    </view>
+<template>

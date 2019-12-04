@@ -1,0 +1,22 @@
+ @import "../list-item/list-item-template.acss"; 
+
+.movies-list {
+  background: #fff;
+}
+.movies-list .top10 {
+  font-size: 20px;
+  color: orange;
+}
+.movies-list .tags-box {
+  background: #fff;
+  line-height: 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.movies-list .tags-box .tags-item {
+  width: 150px;
+  padding:5px 10px;
+}
+.tags-item-checked {
+  background: #3296FA;
+  color: #fff;
+}

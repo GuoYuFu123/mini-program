@@ -1,0 +1,37 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+
+<view class='container'>
+    <!-- loading -->
+    <view a:if="{{loading}}" class="loading-box">
+      <image class="image-gif" src="/images/index/loading.gif"></image>
+    </view>
+    <view a:else class="content-box">
+      <view class="content-top">
+        <image class="title"  src='/images/index/title.png'></image>
+        <image class="logo" src="{{userInfo.avatar}}"></image>
+      </view>
+      <!-- 手动授权 -->
+      <view a:if="{{canIUseAuthButton}}" class="tips">
+        <button  
+        open-type="getAuthorize" 
+        onGetAuthorize="onGetAuthorize" 
+        onError="onAuthError" 
+        scope='userInfo'>
+            会员授权
+        </button>
+      </view>
+      <view a:else> 
+        <view class="tips">
+          欢迎 <text class="nickName">{{userInfo.nickName}}</text> {{userInfo.gender=="m" ? "先生" : "女士"}}
+        </view>
+        <view class="content-btm">
+          <button type="primary" onTap='enterMovies'>进入找电影</button>
+        </view>
+      </view>
+      <!-- 波浪效果 -->
+      <view class='wave-box'>
+        <image class="wave wave-pre" src="/images/index/wave.png"></image>
+        <image class="wave wave-aft" src="/images/index/wave.png"></image>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+.list-item-box {
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.list-item-box image {
+  width: 90px;
+  height: 100px;
+}
+
+.list-item-box .instrc {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-item-box .instrc .name {
+  font-size: 20px;
+  color: #6e6e6e; 
+}
+
+.list-item-box .instrc .feature {
+  overflow: hidden;
+}
+.list-item-box .instrc .feature .new {
+  font-size: 18px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: #63C150;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+
+}
+.list-item-box .instrc .feature .score {
+  float: right;
+  font-size:  18px;
+  color: #e09015
+}

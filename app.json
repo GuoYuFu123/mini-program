@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movies/list/list",    
+    "pages/movies/detail/detail"
+  ],
+  "window": {
+    "defaultTitle": "果果电影",
+    "allowsBounceVertical": "NO"
+  }  
+}

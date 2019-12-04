@@ -1,0 +1,12 @@
+.detail-box .detail-item {
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+}
+.detail-box .detail-item .label {
+    margin-right: 10px;
+    width: 60px;
+}
+.detail-box .detail-item .value {
+    word-break:break-all
+}

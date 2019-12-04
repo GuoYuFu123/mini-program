@@ -1,0 +1,18 @@
+<import src="../list-item/list-item-template.axml" />
+<view class="movies-list">   
+    <!-- top10标志 -->
+    <view class="top10">热度TOP10</view>
+    <!-- 电影类型 -->
+    <view class="tags-box">
+      <text 
+      a:for="{{tags}}" 
+      class={{checked == index ? "tags-item tags-item-checked" : "tags-item"}} 
+      data-index="{{index}}"
+      data-name="{{item}}"
+      onTap="tagsClick">{{item}}</text>
+    </view>  
+    <!-- 电影的详情 -->
+    <view>
+        <template a:for="{{subjects}}" is="listItemTemplate" data="{{item}}"/>
+    </view>
+</view>
